@@ -11,6 +11,18 @@ document.getElementById('btn-calculate').addEventListener('click', function(){
     if(isNaN(incomeInputValue && foodInputValue && rentInputValue && clothesInputValue)){
         alert('Please enter a valid number');
     }
+    if(1 > incomeInputValue){
+        alert('Please enter a Possitive number');
+    }
+    if(1 > foodInputValue){
+        alert('Please enter a Possitive number');
+    }
+    if(1 > rentInputValue){
+        alert('Please enter a Possitive number');
+    }
+    if(1 > clothesInputValue){
+        alert('Please enter a Possitive number');
+    }
     
     
     const calculateTotalExpenses = foodInputValue + rentInputValue + clothesInputValue;
@@ -31,12 +43,18 @@ document.getElementById('btn-calculate').addEventListener('click', function(){
 // Save part
 document.getElementById('btn-save').addEventListener('click', function(){
     const saveInput = getInputValue('save-input');
+    if(saveInput <= 100){
+        alert('You have reached the maximum savings');
+    }
     const savePersenties = saveInput / 100;
     console.log(savePersenties);
     const previousBalance = document.getElementById('balance');
     const previousBalanceNumber = previousBalance.innerText;
 
     const currentPersentiesValue = previousBalanceNumber * savePersenties;
+    if(currentPersentiesValue > previousBalanceNumber){
+        alert('You dont have enough money to save');
+    }
     getPreviousValue('saving-amount', currentPersentiesValue);
     const remainingAmountValue = previousBalanceNumber - currentPersentiesValue;
     getPreviousValue('remaining-amount', remainingAmountValue);
