@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Money Master</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="money-master"><u>Money Master</u></h1>
+    </header>
+    <main>
+        <section class="money-container">
+            <div class="money-img"> 
+                <img src="maney calculate img.jpg" alt="">
+            </div>
+            <div class="money-calculate">
+                <h2>Income</h2>
+                <div class="income box">
+                    <h3>Income:</h3>
+                    <input id="income-input" type="text" placeholder="type your income">
+                </div>
+                <div class="expenses-container">
+                    <h2>Expenses</h2>
+                    <div class="food box">
+                        <h3>Food:</h3>
+                        <input id="food-input" type="text" placeholder="type your food expenses">
+                    </div>
+                    <div class="rent box">
+                        <h3>Rent:</h3>
+                        <input id="rent-input" type="text" placeholder="type your rent expenses">
+                    </div>
+                    <div class="clothes box">
+                        <h3>Clothes:</h3>
+                        <input id="clothes-input" type="text" placeholder="type your clothes expenses">
+                    </div>
+                </div>
+                <div class="calculate-btn-box">
+                    <button id="btn-calculate">Calculate</button>
+                </div>
+                <div class="total-expenses">
+                    <h3>Total Expenses: <span id="total-expenses">0000</span></h3>
+                </div>
+                <div class="balance">
+                    <h3>Balance: <span id="balance">0000</span></h3>
+                </div>
+                <div class="save-box box">
+                    <h3>Save:</h3>
+                    <input id="save-input" type="text" placeholder="type your save %">
+                    <samp class="persent">%</samp>
+                    <button id="btn-save">Save</button>
+                </div>
+                <div class="saving-amount">
+                    <h3>Saving Amount: <span id="saving-amount">0000</span></h3>
+                </div>
+                <div class="remaining-amount">
+                    <h3>Remaining 
+                        Amount: <span id="remaining-amount">0000</span></h3>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- JS file added -->
+    <script src="utilities.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

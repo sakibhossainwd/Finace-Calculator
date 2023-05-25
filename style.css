@@ -1,0 +1,58 @@
+body{
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;;
+}
+h2{
+    color: rgb(77, 77, 255);
+    padding: 0%;
+    margin-bottom: 0;
+}
+button{
+    border: none;
+    background-color: #59a5ff;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 700;
+}
+.money-master{
+    text-align: center;
+    color: rgb(97, 97, 240);
+    font-size: 3em;
+    font-weight: 700;
+}
+.money-container{
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+}
+.money-img img{
+     width: 700px;
+     height: 750px;
+}
+.money-calculate{
+    text-align: center;
+    width: 50%;
+    background-color: aliceblue;
+    padding: 10px 5px;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+input{
+    border: none;
+    background-color: #e3e3e3;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.persent{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
